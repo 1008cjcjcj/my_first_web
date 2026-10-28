@@ -1,0 +1,66 @@
+/* 全局重置，统一默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+    font-family: "Microsoft Yahei", sans-serif;
+    /* flex 让容器水平垂直居中 */
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+/* 外层容器，卡片 */
+.todo-card {
+    background: white;
+    width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #00000015;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 24px;
+}
+
+/* 输入框+按钮一行，flex布局 */
+.input-row {
+    display: flex;
+    gap:10px;
+    margin-bottom:24px;
+}
+
+input {
+    flex: 1; /* 输入框占剩余全部宽度 */
+    padding:10px 14px;
+    border: 1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button {
+    padding:10px 20px;
+    background-color:#3498db;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+ul {
+    list-style: none; /* 去掉列表默认圆点 */
+}
+
+li {
+    padding:12px 16px;
+    background-color:#f7f9fc;
+    margin-bottom:8px;
+    border-radius:8px;
+}
